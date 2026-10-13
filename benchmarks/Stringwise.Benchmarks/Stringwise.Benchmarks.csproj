@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <!-- BenchmarkDotNet requires public, non-sealed benchmark classes. -->
+    <NoWarn>$(NoWarn);CA1707;CA1515;CA1822</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BenchmarkDotNet" Version="0.15.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Stringwise\Stringwise.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <RootNamespace>Stringwise</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IsAotCompatible>true</IsAotCompatible>
+    <EnablePackageValidation>true</EnablePackageValidation>
+
+    <!-- NuGet metadata -->
+    <PackageId>Stringwise</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>Kevin Piech</Authors>
+    <Description>Predictable, culture-safe, null-safe string extension methods for .NET: parsing (ToIntOrNull, ToOrDefault&lt;T&gt;, ToBool, ToEnum), checks, slicing, casing, slugs and more.</Description>
+    <PackageTags>string;extensions;parsing;toint;tointornull;slug;casing;utilities</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/xuss77/Stringwise</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/xuss77/Stringwise</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+    <InternalsVisibleTo Include="Stringwise.Tests" />
+  </ItemGroup>
+
+</Project>

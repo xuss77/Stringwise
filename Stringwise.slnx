@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/benchmarks/">
+    <Project Path="benchmarks/Stringwise.Benchmarks/Stringwise.Benchmarks.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/Stringwise/Stringwise.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Stringwise.Tests/Stringwise.Tests.csproj" />
+  </Folder>
+</Solution>
